@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "4903ee0a-a27a-4fe1-8139-e1fab1b07d2c",
+		"name": "MedREST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22373179"
+	},
+	"item": [
+		{
+			"name": "POST: admin.AddDoctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fio\":\"Яришева Мария Викторовна\",\r\n    \"specialization\":\"терапевт 1-ой категории\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/add-doctor/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"add-doctor",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: admin.AddPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fio\":\"Вышаев Вячеслав Константинович\",\r\n    \"dateofbith\":\"15.07.1970\",\r\n    \"address\":\"Немига - 15\",\r\n    \"identificationNumber\":\"5150770G285BD3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/add-patient/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"add-patient",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE: admin.DeleteDoctor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fio\":\"Вышаев Вячеслав Константинович\",\r\n    \"dateofbith\":\"15.07.1970\",\r\n    \"address\":\"Немига - 15\",\r\n    \"identificationNumber\":\"5150770G285BD3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/delete-doctor/6/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"delete-doctor",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE: admin.DeletePatient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fio\":\"Вышаев Вячеслав Константинович\",\r\n    \"dateofbith\":\"15.07.1970\",\r\n    \"address\":\"Немига - 15\",\r\n    \"identificationNumber\":\"5150770G285BD3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/delete-patient/7/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"delete-patient",
+						"7",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT: admin.ChangePatientFio",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fio\":\"Вышаев Вячеслав Константинович\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/patient-change-fio/5/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"patient-change-fio",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT: admin.ChangeDoctorFio",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fio\":\"Вышаев Вячеслав Константинович\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/doctor-change-fio/4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"doctor-change-fio",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT: admin.ChangeDoctorSpecialization",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"specialization\":\"заведующий терапевтическим отделением\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/doctor-change-spec/4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"doctor-change-spec",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT: admin.ChangePatientDateOfBirth",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dateofbirth\":\"01.01.2151965\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/patient-change-date-of-birth/5/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"patient-change-date-of-birth",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT: admin.ChangePatienIdNumber",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificationNumber\":\"5150700G987BD3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/patient-change-id-number/4/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"patient-change-id-number",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: admin.AllPatients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificationNumber\":\"5150700G987BD3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/all-patients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"all-patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: admin.AllDoctors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identificationNumber\":\"5150700G987BD3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/admin/all-doctors/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"admin",
+						"all-doctors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:patient.InfoPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/patient/info/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patient",
+						"info",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:patient.AllSickLeaves",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/patient/sick-leave/4190597A089PB7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"patient",
+						"sick-leave",
+						"4190597A089PB7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:doctor.InfoDoctor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/doctor/info/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"info",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:doctor.OpenSickLeave",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\":\"Тестовый диагноз\",\r\n    \"treatment\":\"Тестовое лечение\",\r\n    \"dateOpen\":\"25.10.2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor/open-leave/1-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"open-leave",
+						"1-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:doctor.FindOpenedSickLeave",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\":\"Тестовый диагноз\",\r\n    \"treatment\":\"Тестовое лечение\",\r\n    \"dateOpen\":\"25.10.2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor/opened-leave/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"opened-leave",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:doctor.FindClosedSickLeave",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\":\"Тестовый диагноз\",\r\n    \"treatment\":\"Тестовое лечение\",\r\n    \"dateOpen\":\"25.10.2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor/close-leave/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"close-leave",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:doctor.FindPatientByIdNumber",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\":\"Тестовый диагноз\",\r\n    \"treatment\":\"Тестовое лечение\",\r\n    \"dateOpen\":\"25.10.2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor/find-patient/1010195F098PB7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"find-patient",
+						"1010195F098PB7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:doctor.FindPatientSickLeaves",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\":\"Тестовый диагноз\",\r\n    \"treatment\":\"Тестовое лечение\",\r\n    \"dateOpen\":\"25.10.2022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor/find-patient-sick-leave/4190597A089PB7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"find-patient-sick-leave",
+						"4190597A089PB7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET:doctor.ChangeTreatment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"treatment\":\"Тестовое лечение изменено\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor/change-patient-sick-leave/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"change-patient-sick-leave",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT:doctor.CloseSickLeave",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idleave\":\"6\",\r\n    \"dateClose\":\"21.10.2022\"\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/doctor/close-patient-sick-leave/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"close-patient-sick-leave",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
